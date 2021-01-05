@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="utf-8">
+	<title>音频和视频</title>
+</head>
+<body>
+	<!-- 
+		主流视频容器支持格式：.avi,.flv,.mp4,.mkv,.ogg,.webm
+
+		音频编解码器：AAC,MPEG-3,Ogg,Voribs
+		视频编解码器：H.264,VP8,Ogg,Theora
+
+		如果视频时MP4格式基本所有浏览器都兼容
+	-->
+
+	<!-- 
+		controls 控制面板
+		autoplay 自动播放
+		loop	 反复播放视频
+		muted    静音状态
+		poster	 指定视频数据载入时显示的图片,不可以和		    autoplay一起用
+	-->
+	<!-- <video src="../media/photo.mp4" width="544" height="960" controls="controls" loop="loop" muted="muted" poster="../image/demo7.png"></video> -->
+
+	<!-- 
+		preload表示预加载设置
+		none 	  表示不加载
+		metadata  没有第一张自定义图片时，表示播放之后			 只能加载视频第一帧
+		auto      请求浏览器尽快下载整个视频
+	 -->
+	<!-- <video src="../media/photo.mp4" width="544" height="960" controls="controls" muted="muted" preload="metadata"></video>
+
+	<!-- 兼容多个浏览器 -->
+	<video width="544" height="960">
+		<source src="../media/photo.mp4">
+		<source src="../media/photo.mp4">
+		<source src="../media/photo.mp4">
+	</video>
+
+	<!-- 兼容多个浏览器 -->
+	<audio width="300" height="300" controls="controls">
+		<source src="../media/music1.m4a">
+		<source src="../media/photo.mp3">
+	</audio>
+</body>
+</html>

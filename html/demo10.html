@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="utf-8">
+	<title>表单元素</title>
+</head>
+<body>
+
+	<!-- 		
+		form表单的属性：     action			用于跳转到那个地方
+						    method 			get大多用于表单，post大多用于超链接
+						    name 			用于识别表单，可提交过程中时没有用到的
+						    targrt 			跳转页面的方式，_blank重新打开一个页面，默认是_self在此页面直接跳转
+						    autocomplete		是一个刷新后自动适配上一次输入过的内容，默认为on，可手动关闭off
+	-->
+	<!-- 
+		input标签的属性：   
+						    type				选择类型
+						    name             用于提交时对标签的识别，很重要
+						    autofocus		设置鼠标自动对焦
+						    autocomplete		若父类设置了默认值，这里可手动设置此标签为off
+						    value			用于设置该表单的默认内容值
+						    placeholder      用于设置提示值，提交时不可用作默认值内容值使用
+	-->
+	<!-- 
+		lable标签的属性：
+					        for   			用于一种情况
+					       					<lable>用户名：</lable>
+					       					<input type="text" name="user" placeholder="UncleSweet">
+
+					       					👉👉若想他们可以连接在一起形成一个整体则在input定义一个全局id，然后在lable定义for属性绑定到id的input
+
+					       					<lable for="user">用户名：</lable>
+					       					<input id="user" type="text" name="user" placeholder="UncleSweet">
+
+	-->
+	<!-- 
+		fieldset和legend联合使用   
+											作用：使得包含的那一块代码形成一个整体
+											属性：name、from、disable
+	-->
+	<!-- 
+		button标签的类型：
+					      	submit    		提交
+					      	reset			重置
+					      	button          普通按钮（这个后面和js联合用可以发挥其他不一样的功能）
+
+		button标签的属性：
+							form    		指定按钮关联的表单
+					      	formaction    	覆盖form元素的action属性
+					      	formmethod		覆盖form元素的method属性
+					      	formenctype     覆盖form元素的enctype属性	
+					      	formtarget		覆盖form元素的target属性
+					      	formnovalidate	覆盖form元素的novalidate属性    	
+					       				
+
+	-->
+	<form id="reg" action="http://www.baidu.com" method="get" name="reg" target="_blank" autocomplete="on">
+
+		<fieldset>
+			<legend>分组标签</legend>
+			<label for="user">用户名：</label >
+				<input type="text" name="user" id="user" autofocus="autofocus" autocomplete="off" placeholder="123" 
+				>
+				<br>
+			<label>
+		    电子邮件：
+			    <input type="text" name="email"
+			    value="2577817403@qq.com">
+			</label>
+		</fieldset>
+		
+	</form>
+	<button type="submit" formaction="http://www.shuogou.com" form="reg">提交</button>
+	<button type="reset" form="reg">重置</button>
+	<button type="button">按钮</button>
+</body>
+</html>
