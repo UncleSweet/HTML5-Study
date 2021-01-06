@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="utf-8">
+	<title>表单元素【下】</title>
+</head>
+<body>
+
+	<form action="demo11.html" oninput="res.value = num1.valueAsNumber * num2.valueAsNumber">
+
+		<!-- <select name="fruit">
+			<optgroup label="水果1">
+				<option value="1" >苹果</option>
+				<option value="2" selected="selected">香蕉</option>
+				<option value="3">橘子</option>
+			</optgroup>
+			<optgroup label="水果2">
+				<option value="4">苹果1</option>
+				<option value="5">香蕉2</option>
+				<option value="6">橘子3</option>
+			</optgroup>
+		</select> -->
+
+		<!-- 
+		<textarea name="content" placeholder="请留下你的建议" rows="10"
+		cols="30"></textarea> 
+		-->
+
+		<!-- 计算 -->
+		<!-- <input type="number" name="num1"> x <input type="number" name="num2">=
+
+		<output for="num1 num2" name="res"></output> -->
+
+		<input type="text" name="text" placeholder="请输入区号+座机" pattern="^[\d]{2,4}\-[\d]{6,8}$">
+
+		<button>提交</button>
+
+	</form>
+
+</body>
+</html>

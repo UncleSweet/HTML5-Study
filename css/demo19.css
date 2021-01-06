@@ -1,0 +1,20 @@
+@charset "utf-8";
+
+body {
+	/*font-size: 10px;*/
+	font-size: 62.5%;
+}
+
+h1{
+	/*表示本身的3倍，也就是30px*/
+	font-size:3em;
+}
+
+p{
+	font-size: 1.4em;
+}
+
+code{
+	/*表示直接和跟元素挂钩，是10px的1.1倍就是11px*/
+	font-size: 1.1rem;
+}

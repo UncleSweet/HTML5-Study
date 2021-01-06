@@ -1,0 +1,80 @@
+@charset "utf-8";
+
+/*
+	根元素选择器
+	:root{
+		border: 1px solid red;
+	}
+*/
+
+/*伪类选择器*/
+
+/*	
+	这里是指ul下的子元素的第一个
+	ul > li:first-child{
+		color: red;
+	}
+
+*/	
+
+/*	div > p:only-of-type{
+		color: red;
+	}
+
+
+/*UI伪类选择器（通常用在表单里面）*/
+input:enabled{
+	border: 2px solid black;
+}
+
+input:disabled{
+	border: 2px solid red;
+}
+
+input:checked{
+	display: none;
+}
+
+/*
+	验证正确时的样式和不通过验证的样式
+	input:valid{
+		border: 2px solid green;
+	}
+
+	input:invalid{
+		border: 2px solid yellow;
+	}
+*/
+input:required{
+	border: 1px solid yellow;
+}
+
+input:focus{
+	border: 1px solid red;
+}
+
+
+/*超链接过渡*/
+div:link{
+
+}
+
+div:hover{
+
+}
+
+div:active{
+
+}
+
+div:visited{
+
+}
+
+/*其他伪元素*/
+a:not([href*="baidu"]){
+	color:red;
+}
+
+:empty{
+}

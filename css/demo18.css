@@ -1,0 +1,37 @@
+@charset "utf-8";
+
+table{
+	width: 400px;
+	height: 300px;
+	text-align: center;
+	/*border-collapse: separate; 独立，下面是合并*/
+
+	/*border-spacing: 20px;单元格的间隔*/
+
+	/*caption-side: bottom;标题的显示位置*/
+
+	/*table-layout: fixed;默认是auto，会自动拉伸*/
+
+	border:1px solid red;
+}
+
+.name{
+	/*vertical-align: baseline; 垂直对齐顶部*/
+	/*vertical-align: bottom; 垂直对齐底部*/
+	/*vertical-align: middle; 垂直居中*/
+}
+
+em{
+	vertical-align: 4em;
+}
+
+.boxshadow{
+	width: 200px;
+	height: 300px;
+	/*x轴的偏移量 y轴的偏移量 模糊的大小 轮廓大小 颜色 */
+	/*box-shadow: 10px 10px 10px 20px gray;*/
+	border:1px solid red;
+	outline: 3px double yellow;
+	/*这是鼠标的样式*/
+	cursor: default;
+}
