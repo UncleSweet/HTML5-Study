@@ -1,0 +1,27 @@
+@charset "utf-8";
+
+div{
+    background-color: silver;
+    width: 100px;
+    height: 100px;
+    
+    /* min-width: 200px;
+    min-height: 300px;
+    max-width: 400px;
+    max-height: 600px; */
+
+    /*overflow-x: hidden;
+    overflow-y: auto;
+    overflow-y: scroll;
+    overflow-y: visible; */
+
+    /* visibility: visible; */
+    /* visibility: hidden;      元素隐藏，但位置还在*/
+    /*visibility: collapse;     针对表格，不然就和hidden一样效果 */
+
+
+}
+
+table tr:first-child{
+    visibility: collapse;
+}

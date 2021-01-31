@@ -1,0 +1,17 @@
+@charset "utf-8";
+
+div{
+    font-size: 30px;
+    width: 160px;
+    background: salmon;
+    
+    /* text-shadow: 1px 1px 5px red; */
+    /* 可以通过叠加进行实现3d等各种效果只需要用逗号隔开 */
+    /* text-shadow: 1,2,3,4,5; */
+
+    /* 需要配合不能换行使用,可以把多出来的部分省略号进行概述 */
+    /* white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden; */
+
+}

@@ -1,0 +1,14 @@
+@charset "utf-8";
+
+body{
+	font-size: 30px;
+}
+
+p{
+	margin: 0;
+	padding: 0;
+	background:gray;
+	/*font-size: 20px;*/
+	/*height: 2em;   (接近40px）*/
+	font-size: 200%;  /*（60px）相对于父元素的大小进行调配*/
+}

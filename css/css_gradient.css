@@ -1,0 +1,11 @@
+@charset "utf-8";
+
+div{
+    width: 100px;
+    height: 100px;
+    /* 方向，起始颜色，结束颜色 */
+    /* background-image: linear-gradient(to top,orange,green); */
+
+    /* 型状和方向，起始颜色，结束颜色 */
+    background-image: radial-gradient(circle at top,red,green);
+}

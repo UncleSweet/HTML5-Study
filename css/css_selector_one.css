@@ -1,0 +1,106 @@
+@charset "utf-8";
+
+/*通用选择器 不建议选择的，把html里面包含的东西都调用了*/
+*{
+	border:1px solid red;
+}
+
+/*标签选择器*/
+p{
+	border:1px solid yellow;
+}
+
+/*id选择器*/
+#abc{
+	border:1px solid green;
+}
+
+/*class选择器*/
+.abc{
+	border:1px solid blue;
+}
+
+.def{
+	font-size: 30px;
+}
+
+/*属性选择器*/
+[href]{
+	color: black;
+}
+
+[href^="http"]{
+	color: yellow;
+}
+
+[href$="cn"]{
+	color: green;
+}
+
+/*匹配超链接里面含有baidu的*/
+[href*="baidu"]{
+	color: red;
+}
+
+/*匹配class里面又多个值，匹配里面有def的*/
+[class~="def"]{
+	color: green;
+}
+
+[type="text"]{
+	background-color: yellow;
+}
+
+[type="password"]{
+	background-color: black;
+}
+
+
+/*复合选择器*/
+/*分组选择器*/
+p,b,span{
+	color:red;
+}
+
+/*p下面全部b*/
+p b{
+	color: yellow;
+}
+
+/*p下面第一层的b*/
+p > b{
+	color:blue;
+}
+
+/*p相邻兄弟b*/
+p + b{
+	color: black;
+}
+
+/*p后面普通的b*/
+p ~ b{
+	color: black;
+}
+
+
+/*伪元素选择器*/
+/*匹配块级第一行*/
+div::first-line{
+	color: red;
+}
+
+/*匹配块级首字母*/
+div::first-letter{
+	color: green;
+}
+
+/*配合content使用在前面插入内容*/
+div::before{
+	content:"点击";
+}
+
+/*配合content使用在后面插入内容*/
+div::after{
+	content:"点击后";
+}
+

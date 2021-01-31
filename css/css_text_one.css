@@ -1,0 +1,30 @@
+@charset "utf-8";
+
+body{
+	font-size:50px;
+}
+
+@font-face{
+	font-family: 'abc';   /*定义引入字体的名称*/
+	src: url();			  /*查找引入字体的路径*/
+}
+
+p{
+	font-size:50px;
+	font-family: abc;     /*调用自定义字体*/
+	/*font-size: xx-small;*/
+	/*font-size: xx-large;*/
+	/*font-size:smaller;*/
+	/*font-size: larger;*/
+
+	/*font-variant: normal;
+	font-variant: small-caps;  小型字母大写，但大小不变*/
+
+	/*font-style: oblique;  倾斜状态*/
+	/*font-weight: bold;*/
+	/*font-family: 微软雅黑;*/
+
+	/*font-family: 楷体,微软雅黑,宋体;  依次往下找，直到找到为止*/
+
+	/*font: italic bold small-caps 50px 楷体,微软雅黑,宋体;  数字不可放第一位，不然所有样式都不会成功*/
+}

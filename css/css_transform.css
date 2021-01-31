@@ -1,0 +1,86 @@
+@charset "utf-8";
+
+/* div{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+
+    /* 平移 */
+    /* transform:translate(200px,200px);  */
+    
+    /* 缩放 */
+    /* transform:scale(1.5,2);   */
+    
+    /* 以中心点进行旋转 */
+    /* transform:rotate(30deg);   */
+    
+    /* 倾斜 */
+    /* transform: skew(45deg,20deg);   */
+        
+    /* 设置中心点*/
+    /* transform-origin: left top;*/
+/*}  */
+
+body{background-color: #ccc;color: black;}
+.cube {
+position: absolute;
+top: 50%;
+left: 50%;
+margin-left: -160px;
+margin-top: -160px;
+}
+.backface,.bottomface div,.leftface,.frontface,.topface div,.rightface{
+width:150px;
+height:150px;
+padding:10px;
+line-height: 150px;
+opacity: 0.5;
+text-align:center;
+}
+.backface{
+-webkit-transform: skewY(-30deg);
+-moz-transform: skewY(-30deg);
+background-color:red;
+left: 200px;
+}
+.bottomface{
+-moz-transform: rotate(60deg);
+position: absolute;
+left: 85px;
+top: 135px;
+}
+.leftface{
+-moz-transform: skewY(30deg);
+background-color:green;
+position: absolute;
+top:100px;
+}
+.frontface{
+-moz-transform: skewY(-30deg);
+background-color: yellow;
+position: absolute;
+left: 170px;
+top:100px;
+}
+.topface{
+-moz-transform: rotate(60deg);
+position: absolute;
+left: 85px;
+top: -35px;
+}
+.rightface{
+-moz-transform: skewY(30deg);
+background-color: burlywood;
+position: absolute;
+left: 170px;
+top:0;
+}
+.bottomface div{
+-moz-transform: skewY(-30deg) scaleY(1.16);
+background-color: fuchsia;
+box-shadow:1px 0px 0px #f6f6f6,0px -1px 0px #f6f6f6,-1px 0px 0px #f6f6f6,0px 1px 0px #f6f6f6;
+}
+.topface div{
+-moz-transform: skewY(-30deg) scaleY(1.16);
+background-color: grey;
+}

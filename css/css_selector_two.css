@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+ul > li{
+	color: red;
+}
+
+ul > li:first-child{
+	color: green;
+}
+
+ul > li:last-child{
+	color: black;
+}
+
+ul > li:only-child{
+	color: yellow;
+}
+
+/*div里面只包含一个p*/
+div > p:only-of-type{
+	color: red;
+}

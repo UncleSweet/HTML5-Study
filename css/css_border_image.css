@@ -1,0 +1,21 @@
+@charset "utf-8";
+
+div{
+    width: 120px;
+    height: 50px;
+    border: 1px solid transparent;
+    border-image: url(../image/button.png);
+    /* border-image-source: url(../image/border.png); */
+
+    border-image-width: 10px;   /* 这里不会占位置，不顶开内容 */
+    /* border-width: 10px; */   /* 这里会占位置，顶开内容  */
+
+    border-image-slice: 10 fill;     /*这里是不可以带单位的,数值越大图像就越小*/
+
+    /* border-image-outset: 20px;  */      /* 向外扩张 */
+
+   /*  border-image-repeat: stretch; */
+   /* border-image-repeat: repeat; */
+   border-image-repeat: round;              /* 最常用就是这个 */
+  /*  border-image-repeat: space; */
+}

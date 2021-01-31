@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+div{
+    width: 100px;
+    height: 100px;
+    border-width: 10px;
+
+    /* border-width: 2px;
+    border-style: solid;
+    border-color: red; */
+
+   
+    /* border-style: dashed;    破折线边框 */
+    /* border-style: dotted;    圆点型边框 */
+    /* border-style: double;    双线型边框 */
+
+    /* border-style: groove;
+    border-style: inset;
+    border-style: outset; */
+
+    /* border-radius: 10px 5px 10px 3px;
+    border-top-right-radius: 5px; */
+
+    /* background-size: cover;      等比例缩放，尽可能缩放但会超出一点 */
+    /* background-size: contain;    等比例缩放，经历居中，不会超出*/
+    /* background-size: 100%;       等比例缩放，占满整个屏幕 */
+    
+    /* background-attachment: fixed; 背景固定 */
+
+    /* background: 颜色 路径 重复 对齐方式 / 100% border-box或content-box; */
+
+
+
+
+
+}

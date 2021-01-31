@@ -1,0 +1,17 @@
+@charset "utf-8";
+
+div{
+    /* columns:auto 3; */
+    /* columns:150px 3; */
+
+    column-width: 150px;
+    column-count: 3;
+    column-gap: 50px;
+    column-rule: 2px dashed silver;
+
+}
+
+h1{
+    text-align: center;
+    column-span: all;
+}

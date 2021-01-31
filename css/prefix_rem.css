@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+html{
+	font-size: 10px;
+}
+
+h1{
+	/* 10的三倍 */
+	font-size: 3em;  
+}
+
+p{
+	font-size: 1.4em;
+}
+
+code{
+	/* 这里是15px，因为em和父元素挂钩，所以是14px的1.1倍 */
+	/* font-size: 1.1em; */
+
+	/* 这里是14px，因为rem和根元素挂钩，所以是10的1.4倍*/
+	font-size: 1.4rem;
+}

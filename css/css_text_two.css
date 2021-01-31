@@ -1,0 +1,47 @@
+@charset "utd-8";
+
+p{
+	font-size: 50px;
+	background:silver;
+
+	/*文字线*/
+	/*text-decoration: underline;
+	text-decoration: overline;
+	text-decoration: line-through;
+	text-decoration: none;*/
+
+	/*大小写转换*/
+	/*text-transform: uppercase;
+	text-transform: lowercase;*/
+
+	/*文本加阴影*/
+	/*text-shadow: 5px 5px 8px red;*/
+
+	/*文本对齐*/
+	/*text-align: left;
+	text-align: center;
+	text-align: right;*/
+
+	/*文本空格处理*/
+	/*white-space: nowrap;  	 压缩形式，一整条不换行*/
+	/*white-space: pre;    		 空白符被保留，类似<pre></pre>标签，但不会换行*/
+	/*white-space: pre-wrap;     空白符被保留，但会换行*/
+	/*white-space: pre-line;	 空白符不被保留，但会换行*/
+
+	/*文本间距*/
+	/*letter-spacing: 3px;*/
+
+	/*单词间距*/
+	/*word-spacing: 3px;*/
+
+	/*文本行高*/
+	/*line-height: 1.5;*/
+
+	/*单词断开换行*/
+	/*word-wrap: break-word;*/
+
+	/*文本首行缩进*/
+	/*text-indent: 2em;  两个字的大小*/
+
+
+}
